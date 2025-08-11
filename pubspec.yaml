@@ -1,0 +1,71 @@
+name: harpa_crista_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+  fonts:
+    - family: Prompt
+      fonts:
+        - asset: assets/fonts/prompt/Prompt-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/prompt/Prompt-ThinItalic.ttf
+          weight: 100
+          style: italic
+        - asset: assets/fonts/prompt/Prompt-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/prompt/Prompt-ExtraLightItalic.ttf
+          weight: 200
+          style: italic
+        - asset: assets/fonts/prompt/Prompt-Light.ttf
+          weight: 300
+        - asset: assets/fonts/prompt/Prompt-LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: assets/fonts/prompt/Prompt-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/prompt/Prompt-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: assets/fonts/prompt/Prompt-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/prompt/Prompt-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/prompt/Prompt-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/prompt/Prompt-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+        - asset: assets/fonts/prompt/Prompt-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/prompt/Prompt-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: assets/fonts/prompt/Prompt-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/prompt/Prompt-ExtraBoldItalic.ttf
+          weight: 800
+          style: italic
+        - asset: assets/fonts/prompt/Prompt-Black.ttf
+          weight: 900
+        - asset: assets/fonts/prompt/Prompt-BlackItalic.ttf
+          weight: 900
+          style: italic
+
+
