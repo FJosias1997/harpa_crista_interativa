@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
 
   Future<void> carregarDados() async {
     String jsonString = await rootBundle.loadString(
-      'assets/harpa_crista_640_hinos.json',
+      'assets/json/harpa_crista_640_hinos.json',
     );
     setState(() {
       dados = json.decode(jsonString);
