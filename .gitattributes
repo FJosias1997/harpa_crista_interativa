@@ -1,1 +1,15 @@
 *.dart linguist-language=Dart
+
+build/* linguist-vendored
+.android/* linguist-vendored
+.ios/* linguist-vendored
+.dart_tool/* linguist-vendored
+.packages linguist-vendored
+pubspec.lock linguist-vendored
+.idea/* linguist-vendored
+.vscode/* linguist-vendored
+*.iml linguist-vendored
+*.gradle linguist-vendored
+*.log linguist-vendored
+*.tmp linguist-vendored
+*.swp linguist-vendored
