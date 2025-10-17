@@ -1,6 +1,6 @@
 # harpa_crista_interativa
 
-Um App que contém a Harpa Cristã completa
+A Flutter Project that creates the digital version of the hymnal called: Harpa Cristã
 
 ## Getting Started
 
