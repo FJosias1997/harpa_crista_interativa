@@ -101,10 +101,7 @@ class _HymnPageState extends State<HymnPage> {
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.print), label: 'Imprimir'),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.business),
-            label: 'Business',
-          ),
+          BottomNavigationBarItem(icon: Icon(Icons.business), label: ''),
           BottomNavigationBarItem(icon: Icon(Icons.school), label: 'School'),
         ],
         currentIndex: _selectedIndex,
