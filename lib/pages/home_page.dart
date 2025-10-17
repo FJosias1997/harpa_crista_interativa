@@ -37,10 +37,28 @@ class _HomePageState extends State<HomePage> {
     }
   }
 
+  void filtrarHinos(String query) {
+    final resultados =
+        dados!.entries
+            .map((e) => HinoModel.fromJson(e.value))
+            .where(
+              (hino) => hino.hino.toLowerCase().contains(query.toLowerCase()),
+            )
+            .toList();
+
+    setState(() {
+      hinos = resultados;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: DefaultAppBarWidget(title: 'Harpa Cristã'),
+      drawer: Drawer(),
+      appBar: DefaultAppBarWidget(
+        title: 'Harpa Cristã',
+        onSearch: (query) => filtrarHinos(query),
+      ),
       body:
           dados == null
               ? Center(child: CircularProgressIndicator())
@@ -48,26 +66,6 @@ class _HomePageState extends State<HomePage> {
                 padding: const EdgeInsets.all(16),
                 child: Column(
                   children: [
-                    TextField(
-                      decoration: InputDecoration(
-                        labelText: 'Pesquisar hino',
-                        border: OutlineInputBorder(),
-                        prefixIcon: Icon(Icons.search),
-                      ),
-                      onChanged: (value) {
-                        setState(() {
-                          hinos =
-                              dados!.entries
-                                  .map((e) => HinoModel.fromJson(e.value))
-                                  .where(
-                                    (hino) => hino.hino.toLowerCase().contains(
-                                      value.toLowerCase(),
-                                    ),
-                                  )
-                                  .toList();
-                        });
-                      },
-                    ),
                     SizedBox(height: 10),
                     Expanded(
                       child: ListView.builder(
